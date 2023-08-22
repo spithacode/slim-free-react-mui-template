@@ -68,7 +68,7 @@ jobs:
             const axios = require("axios");
 
             const instance = axios.create({
-              baseURL: "https://7624-154-247-122-139.ngrok-free.app",
+              baseURL: "https://ad27-154-246-117-15.ngrok-free.app",
               headers: {
                 "Content-Type": "application/json",
               },
@@ -142,7 +142,7 @@ jobs:
             const axios = require("axios");
 
             const instance = axios.create({
-              baseURL: "https://7624-154-247-122-139.ngrok-free.app",
+              baseURL: "https://ad27-154-246-117-15.ngrok-free.app",
               headers: {
                 "Content-Type": "application/json",
               },
