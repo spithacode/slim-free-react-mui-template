@@ -34,6 +34,9 @@ jobs:
         run: |
           echo -e "\n@componly:registry=https://npm.pkg.github.com/" >> .npmrc
           echo //npm.pkg.github.com/:_authToken=${{ secrets.COMPONLY_NPM_AUTH_TOKEN }} >> .npmrc
+          if [[ ! -f yarn.lock ]]; then
+            yarn install --frozen-lockfile
+          fi
           if [[ "${{ matrix.workspaces}}" != "empty" ]]; then
               pwd
               pushd ${{ matrix.workspaces }}
